@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf=8">
+	<title> Python Programming Tutorial</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"
+	<link href="{{url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+	<link rel="shortcut icon" href="{{ url_for(static', filename='faveicon.ico')}}">
+</head>
+
+<header>
+	<div class="navbar-header">
+		<a class="navbar-brand" href="/">
+			<img style="max-width:120px; margin-top-7px" src="{{ url_for('static', filename='images/mainlogo.jpg') }}">
+		</a>
+	</div>
+	
+	<div class = "container-fluid">
+		<a href="/dashboard/"></a><button type="button" class="btn btn-primary" aria-label="Left Align"  style="margin-top:5px; margin-bottom: 5px; height: 44px; margin-right: 15px"><span class="glyphicon glyphicon-align=left" aria-hidden="true"></span>Start Quiz</button></a>
+	
+
+
+		<ul class="nav navbar=nav navbar-right">
+	    	<!--login modal-->
+		
+		<div id="modalLogin" class="modal">
+			<div class="modal-content">
+				<h2 class="center-align">Login</h2>
+				<div class="center-align">
+					<div class="divider"></div>
+					
+					<form class="col s12">
+						<div class="row center-align">
+							<div class="input-field col m10">
+								<input id="icon_prefix" type="text" class="validate">
+								<label for="icon_prefix">Username</label>
+							</div>
+							<div class="input-field col m10">
+								<input id="icon_password" type="password" class="validate">
+								<label for="icon_password">Password</label>
+							</div>
+						</div>
+					</form>
+					
+					
+					<div class="divider"></div>
+					<p>
+						<a href="#" class="btn btn-flat white modal-close">Cancel</a> &nbsp;
+						<a href="#" class="waves-effect waves-blue blue btn btn-flat modal-action modal-close">Login</a>
+					</p>
+					
+					
+				</div>
+			</div>
+		</div>
+
+
+		
+		<!--Register modal-->
+		
+		<div id="modalRegister" class="modal">
+			<div class="modal-content">
+				<h2 class="center-align">Sign up</h2>
+				<div class="center-align">
+					<div class="divider"></div>
+					
+					<form action="/register/" method=post >
+							<div class="input-field col">
+								<input id="username" type="text" class="validate">
+								<label for="username">Username</label>
+							</div>
+							<div class="input-field col">
+								<input id="password" type="password" class="validate">
+								<label for="password">Password</label>
+							</div>
+							<div class="input-field col">
+								<input id="confirm" type="password" class="validate">
+								<label for="confirm">Repeat Password</label>
+							</div>
+							
+							<div class="input-field col">
+								<input id="email" type="text" class="validate">
+								<label for="email">Email</label>
+							</div>
+
+							<div class="divider"></div>
+							<p>
+								<a href="#" class="btn btn-flat white modal-close">Cancel</a> &nbsp;
+								<button class="btn" type=submit value=Register>Sign Up</button>
+							</p>
+
+					</form>
+
+					
+
+				</div>
+			</div>
+		</div>
+
+		<script>
+			$(document).ready(function(){
+				$(".button-collapse").sideNav();
+				$('.modal-trigger').leanModal();
+				$('.collapsible').collapsible({
+				  accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+				});
+				$('#aside').pushpin({ top:110, bottom:500 });
+		  });
+		</script>
+		<script>
+		  $(document).ready(function(){
+			$('.collapsible').collapsible({
+			  accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+			});
+			$('select').material_select();
+		  });
+	  </script>
+	  <script>
+		function goBack() {
+			window.history.back()
+		}
+	</script>
+		<script type="text/javascript" src="/static/js/run_prettify.js"></script>
+
+
+	    </ul>
+	</div>
+
+    			
+
+
+
+
+
+</header>	
+
+<body> 
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+
+
+
